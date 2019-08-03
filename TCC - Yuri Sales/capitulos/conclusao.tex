@@ -1,0 +1,32 @@
+\chapter{Considerações Finais}
+\label{chap:conclusao}
+Corretoras de criptomoedas existem há menos de dez anos e, devido à necessidade de consultar informações e automatizar tarefas em tempo real, algumas delas já possuem uma \textit{API} para que seja possível acessar dados públicos e privados.
+
+Desenvolvedores encontram dificuldade de lidar com tais \textit{APIs} por diferentes motivos, entre eles: documentação mal escrita e mal detalhada, erros inesperados, inconsistência de dados, ausência de tratamento de erros, limitações, entre outros.
+
+Este trabalho apresenta uma análise comparativa das \textit{RESTful APIs} de seis diferentes \textit{exchanges} de criptomoedas baseado em padrões e boas práticas de desenvolvimento, objetivando servir como base para outros desenvolvedores que atuam desenvolvendo soluções para o mercado de criptoativos.
+
+A fim de atingir os objetivos da pesquisa, o desenvolvimento foi dividido em três partes: escolha das regras que serão utilizadas como parâmetros, análise individual dos padrões e do funcionamento das \textit{APIs} conforme cada critério e levantamento das pontuações gerais obtidas pelas corretoras.
+
+Na primeira fase, um escopo para definir as regras foi delimitado. Foram escolhidos os critérios mais básicos e necessários que todas as aplicações devem seguir, levando em consideração o contexto que essas \textit{APIs} estão inseridas. 
+
+Na análise, o trabalho foi realizado de forma individual, para que houvesse um aprofundamento no estudo e nos testes de cada
+\textit{exchange}. Além disso, foi realizada uma pesquisa a respeito das limitações de cada \textit{API REST},
+servindo, no fim, como um complemento à análise.
+
+E, por último, um resumo de cada conjunto de regras por categoria, detalhando o cumprimento das mesmas e aprofundando na comparação e nas causas que podem levar ou não ao cumprimento de tais regras.
+
+Durante este estudo, foi possível notar que as equipes de desenvolvimento das corretoras pouco se preocupam com as boas práticas e os padrões definidos para aplicações \textit{RESTful}. Podendo isso ser prejudicial aos consumidores, que precisam desse serviço disponibilizado para desenvolver seus sistemas, e, até mesmo, à própria plataforma da \textit{exchange}, com dados irreais e outros possíveis erros.
+
+No balanço total, a Binance foi a corretora que mais cumpriu as regras, seguida da Livecoin e da Huobi. Já a Bittrex, a Gate.io e a Poloniex, cumpriram menos da metade das regras, dessa forma, mostrando que as suas \textit{APIs} estão imaturas no quesito padronização do desenvolvimento.
+
+\section{Limitações}
+
+A principal limitação encontrada nesta pesquisa foi a falta de informações disponibilizadas pelas documentações das \textit{APIs}. Em algumas \textit{exchanges} analisadas, detalhes sobre os possíveis tipos de respostas de cada \textit{endpoint}, também sobre os \textit{status codes} e mensagens internas são omitidos. Em uma corretora específica, a Gate.io, sequer são informados os limites de requisições e o tempo de bloqueio após tal limite ser ultrapassado, dessa forma, dificultando os testes e as simulações realizadas.
+
+
+\section{Trabalhos futuros}
+
+O desenvolvimento de \textit{APIs} passa por diversos estágios, entre eles: gerenciamento, modelagem, documentação, versionamento, testes e governança. Por ser uma área vasta e complexa, a pesquisa pode, futuramente, ser estendida analisando a documentação escrita pelas corretoras e realizando testes unitários, de performance e de segurança
+
+O estudo das \textit{exchanges} pode ser levado a outro patamar com o acréscimo de mais \textit{APIs} e com a inserção de mais um objeto de análise, os \textit{Websockets}, os quais, diferentemente das \textit{RESTful APIs}, estão menos presentes nas corretoras.

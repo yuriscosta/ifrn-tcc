@@ -1,0 +1,48 @@
+\chapter{Introdução}
+\label{chap:introducao}
+
+O dinheiro pode ser considerado uma das maiores invenções da humanidade. A sua origem, séculos atrás, se deu naturalmente no seio da sociedade, cumprindo um papel importante no auxílio das transações econômicas voluntárias. Com ele, os indivíduos tornaram-se capazes de poupar seus ganhos excedentes e de adquirirem mais bens e serviços. Até então, cada indivíduo apenas consumia e utilizava aquilo que ele fosse capaz de adquirir por meio da coleta ou da caça. A partir daí, surgiu o escambo, onde as pessoas poderiam trocar os seus bens excedentes diretamente. Porém, com o avanço da produção e manufatura, mais produtos foram surgindo, a prosperidade aumentando e o escambo tornou-se uma prática inviável devido à dificuldade na realização das trocas \cite{Schiff2012}. 
+
+Desde então, como meio de padronizar essas unidades de troca em cada localidade ao redor do planeta, o dinheiro assumiu várias formas, desde elementos oriundos da natureza, como as especiarias e os metais, até o atual papel-moeda. Cada um desses bens que servem ou serviram como meio de troca possui as suas vantagens e desvantagens (portabilidade, divisibilidade, peso, facilidade de falsificação, entre outras medidas).
+
+Ao longo dos séculos, cada vez mais os governos foram se apropriando do controle e da emissão de moedas, consequentemente se autofinanciando e aumentando seu poder sobre as  sociedades, culminando com a total ruína do sistema monetário antigo e pondo em prática a criação de moeda sob o regime de bancos centrais \cite{Ulrich2014}. Após as crises econômicas mundiais causadas pela total estatização do dinheiro e da economia, principalmente no século XX e XXI, o ápice da crise mundial de 2008 coincidiu com o surgimento de uma nova tecnologia, a criptomoeda.
+
+A moeda foi reinventada em forma de código computacional. Satoshi Nakamoto, pseudônimo utilizado pelo(s) criador(es), lançou um \textit{white paper}\footnote{\em https://bitcoin.org/bitcoin.pdf} detalhando a criação de um novo tipo de moeda e do sistema de pagamento totalmente descentralizado, chamado de \textit{Bitcoin}, de código aberto, que possuía seu valor determinado pelos indivíduos no mercado e que não seria emitido por nenhuma autoridade central, trazendo de volta às pessoas o total controle do seu dinheiro \cite{Ulrich2014}. O \textit{Bitcoin} funciona em cima da \textit{Blockchain}, uma tecnologia que é responsável por registrar todos os dados de transações envolvendo a moeda em um livro-razão criptografado e imutável.
+
+Apesar do \textit{Bitcoin} surgir com o conceito \textit{peer-to-peer} (ponto a ponto), eliminando a necessidade de intermediários, após dez anos do seu surgimento, o número de criptomoedas concorrentes aumentou exponencialmente e, assim como ocorreu com outras moedas ao longo do tempo, surgiu a necessidade de realizar trocas entre as mesmas.
+
+As \textit{exchanges} (corretoras) são plataformas \textit{online}, com funcionamento em tempo real que servem como intermediárias transações. Elas organizam as informações de cada negociação em livros abertos.
+
+Devido à facilidade oferecida pelas corretoras de criptomoedas aliada ao tempo necessário para acompanhar as transações, preços e oportunidades de lucros, foi inevitável o surgimento de ferramentas auxiliares que automatizarem todo o processo de negociação. Tais ferramentas – também denominadas de robôs ou \textit{bots} – facilitam o trabalho dos investidores, tendo em vista que elas podem simular as ações dos mesmos em tempo mais hábil e com capacidade de processamento de informações além do limite humano, além da flexibilidade de trabalhar simultaneamente com um leque de configurações de como agir no mercado.
+
+Todas essas inovações vêm ocorrendo de forma rápida e as \textit{exchanges} ainda estão no processo de adaptação de tais mudanças, desenvolvendo e disponibilizando suas informações para o público, principalmente aqueles que desejam desenvolver aplicações e serviços relacionados. 
+
+\section{Problema}
+
+Essa disponibilização de dados distribuída, em tempo real e com valores precisos é feita por meio de \textit{APIs} – \textit{Application Programming Interface} ou, em português, Interface de Programação de Aplicativos – um conjunto de padrões e rotinas estabelecidos por um software para serem utilizados por outras aplicações sem que elas envolvam-se com detalhes internos da implementação deste sistema, mas, apenas com os serviços oferecidos.
+
+Por serem serviços \textit{web}, as corretoras de criptoativos seguem um estilo de arquitetura denominado \textit{REST} – \textit{Representational State Transfer} (Transferência de Estado Representacional) – no desenvolvimento de suas \textit{APIs}. O padrão \textit{REST} é um protocolo difundido mundialmente motivado por seu desempenho, confiabilidade e capacidade de escalabilidade.
+
+A automatização de tarefas relacionadas à operações nas \textit{exchanges} ainda carecem de amadurecimento. A maioria delas ainda estão em processo inicial no desenvolvimento de suas \textit{APIs}, e problemas como: inconsistência de dados, falta de tratamento de erros, falta de flexibilidade na consulta de dados, códigos mal escritos, documentação mal elaborada, atualizações esporádicas, utilização de códigos não oficiais feitos por terceiros, limitações na utilização, entre outros; são comuns no cotidiano dos desenvolvedores, os quais enfretam desafios devido à falta de padronização na disponibilização dos dados e pela alta escassez de materiais de referência, manuais e tutoriais que os auxiliem no consumo desses serviços.
+
+\section{Justificativa}
+
+Neste trabalho, é realizada uma análise comparativa entre a forma de comunicação e os dados disponibilizados por seis exchanges (Binance\footnote{\em https://www.binance.com/}, Bittrex\footnote{\em https://international.bittrex.com}, Gate.io\footnote{\em https://www.gate.io/}, Huobi\footnote{\em https://www.hbg.com/}, Livecoin\footnote{\em https://www.livecoin.net}, e Poloniex\footnote{\em https://poloniex.com/}) através do estudo de um conjunto de padrões e regras de boas práticas de desenvolvimento de \textit{APIs REST}, aliado à ferramentas que auxiliem na realização desta análise, a fim de criar um documento que sirva como base para os desenvolvedores lidarem com as particularidades e limitações das \textit{exchanges} e que as dificuldades encontradas ao trabalhar com essas \textit{APIs} sejam reduzidas.
+\section{Objetivos}
+
+\subsection{Objetivo Geral}
+
+Este trabalho tem como objetivo geral efetuar uma análise comparativa entre as principais \textit{APIs} de corretoras de criptomoedas
+com base em regras, boas práticas e padrões de desenvolvimento de \textit{APIs}, a fim de subsidiar outros desenvolvedores que atuam nesta área.
+
+\subsection{Objetivos Específicos}
+
+Para atender o objetivo geral, foram definidos os seguintes objetivos específicos:
+
+\begin{itemize}
+	\item Definir as regras que serão utilizadas como parâmetro;
+	\item Utilizar ferramentas como o \textit{cURL}, o \textit{Postman} e o navegador para acessar as informações disponibilizadas pelas \textit{APIs};
+	\item Analisar as informações que foram obtidas com base nos parâmetros especificados;
+	\item Afirmar se as regras foram cumpridas por cada \textit{exchange};
+	\item Realizar uma comparação entre as análises individuais de cada corretora e documentar o resultado.
+\end{itemize}

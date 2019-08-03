@@ -1,0 +1,61 @@
+\chapter{Resultados}
+\label{chap:resultados}
+
+Após a realização das análises individuais das \textit{exchanges} de criptomoedas tomando como parâmetro trinta e três regras de modelagem e de boas práticas de desenvolvimento de \textit{RESTful APIs} e suas respectivas limitações de uso, podemos realizar a soma total de todos os pontos obtidos por cada uma e fazer o \textit{ranking} das melhores \textit{APIs} para se trabalhar.
+
+A \textbf{Tabela \ref{tab:my-table}} resume todos os pontos adquiridos individualmente em todas as regras e, no final, a soma total de toda a pontuação obtida ao longo da análise.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{imagens/ranking_exchanges.png}
+	\caption{Ranking das exchanges com as melhores APIs}
+	\label{fig:ranking-apis-exchanges}
+\end{figure}
+
+A gráfico acima mostra, em ordem decrescente, a classificação conforme a pontuação obtida. A Binance é a corretora que melhor desenvolveu a sua \textit{API}, seguindo a maioria das regras usadas neste trabalho. Em seguida vem a Livecoin com uma pontuação próxima da Huobi, diferenciando apenas por três décimos.
+
+As \textit{exchanges} da quarta e da quinta colocação compartilham a mesma pontuação, o que posicionou a Bittrex acima da Gate.io é a forma como a mesma trata as limitações de requisições, sendo este atributo melhor documentado e simulável nos testes de requisições. E, por último, a Poloniex, com o pior desempenho na análise. 
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Regras} & \textbf{Binance} & \textbf{Bittrex} & \textbf{Poloniex} & \textbf{Livecoin} & \textbf{Gate.io} & \textbf{Huobi} \\ \hline
+        Regra 1         & 0.8              & 1                & 0                 & 0.8               & 0.8              & 1              \\ \hline
+        Regra 2         & 1                & 1                & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 3         & 0                & 0                & 0                 & 0                 & 0                & 0              \\ \hline
+        Regra 4         & 1                & 1                & 1                 & 0                 & 0                & 1              \\ \hline
+        Regra 5         & 0.5              & 0                & 0.5               & 0.5               & 0.5              & 0.5            \\ \hline
+        Regra 6         & 1                & 1                & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 7         & 1                & 1                & 0                 & 1                 & 0                & 1              \\ \hline
+        Regra 8         & 1                & 1                & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 9         & 0.5              & 1                & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 10        & 1                & 1                & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 11        & 0.5              & 0.5              & 0.5               & 0.5               & 0.5              & 0.5            \\ \hline
+        Regra 12        & 0                & 0                & 0                 & 0                 & 0                & 0              \\ \hline
+        Regra 13        & 1                & 0.3              & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 14        & 1                & 0                & 0.5               & 0.5               & 0.5              & 0.5            \\ \hline
+        Regra 15        & 1                & 0                & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 16        & 1                & 0                & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 17        & 1                & 0                & 0                 & 0                 & 0                & 0              \\ \hline
+        Regra 18        & 1                & 1                & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 19        & 1                & 0.5              & 0                 & 0                 & 0                & 0              \\ \hline
+        Regra 20        & 0                & 0                & 0                 & 0                 & 0                & 0              \\ \hline
+        Regra 21        & 1                & 1                & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 22        & 0.5              & 0                & 0                 & 0.5               & 0                & 0.5            \\ \hline
+        Regra 23        & 1                & 0                & 0                 & 0                 & 0                & 0              \\ \hline
+        Regra 24        & 1                & 0                & 0                 & 1                 & 0                & 1              \\ \hline
+        Regra 25        & 0                & 0                & 0                 & 1                 & 1                & 0              \\ \hline
+        Regra 26        & 1                & 1                & 0                 & 0                 & 0                & 0              \\ \hline
+        Regra 27        & 1                & 1                & 1                 & 1                 & 1                & 0.5            \\ \hline
+        Regra 28        & 0                & 1                & 0                 & 0                 & 0                & 0              \\ \hline
+        Regra 29        & 0                & 1                & 0                 & 0                 & 0                & 0              \\ \hline
+        Regra 30        & 1                & 0                & 0.5               & 0.5               & 1                & 0.5            \\ \hline
+        Regra 31        & 1                & 1                & 1                 & 1                 & 1                & 1              \\ \hline
+        Regra 32        & 0                & 0                & 0                 & 0                 & 0                & 0              \\ \hline
+        Regra 33        & 0                & 0                & 0                 & 0                 & 0                & 0              \\ \hline
+        \textbf{TOTAL}  & 22.8             & 16.3             & 15                & 18.3              & 16.3             & 18             \\ \hline
+    \end{tabular}
+    \caption{Pontuações obtidas por regra e a soma total de cada corretora}
+    \label{tab:my-table}
+\end{table}
